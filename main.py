@@ -9,13 +9,14 @@ BUTTON_FG = '#041562'
 
 
 def get_path():
-    file_path = fr'{path_entry.get()}'.strip('"')
-    text_to_speech(file_path)
-    message_label.destroy()
-    error_label.destroy()
-    convert_button.config(state=DISABLED)
-
-    # error_label.config(text="Invalid path!")
+    try:
+        file_path = fr'{path_entry.get()}'.strip('"')
+        text_to_speech(file_path)
+        message_label.destroy()
+        error_label.destroy()
+        convert_button.config(state=DISABLED)
+    except:
+        error_label.config(text="Invalid path!")
 
 
 def pause():

@@ -56,7 +56,7 @@ convert_button.grid(row=5, column=2, pady=10)
 pause_game = Button(text="Pause", font=('Courier', 10, 'bold'), command=pause, width=10, bg=BUTTON_BG, fg=BUTTON_FG)
 pause_game.grid(row=6, column=2, pady=10)
 
-unpause_button = Button(text="UnPause", font=('Courier', 10, 'bold'), command=unpause, width=10, bg=BUTTON_BG, fg=BUTTON_FG)
+unpause_button = Button(text="Resume", font=('Courier', 10, 'bold'), command=unpause, width=10, bg=BUTTON_BG, fg=BUTTON_FG)
 unpause_button.grid(row=7, column=2, pady=10)
 
 stop_button = Button(text="Stop", font=('Courier', 10, 'bold'), command=stop, width=10, bg=BUTTON_BG, fg=BUTTON_FG)
